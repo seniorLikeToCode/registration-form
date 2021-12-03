@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Data</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/button.css">
+    <link rel="stylesheet" href="./css/input.css">
+    <link rel="stylesheet" href="./css/background-animation.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Rubik:wght@400;500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="particles-js"></div>
+
+
+    <div class="container column-flex">
+        <!-- <header class="heading"><img src="./img/abhiyaantriki.svg" alt="abhiyaantriki" id="logo"></header> -->
+        <h1 class="main-heading">BIG DATA</h1>
+        <h2 class="sub-heading">centre of excellene</h2>
+        <main class="section-form bg-color">
+            <div class="section-team-form ">
+                <h2 class="heading-secondary">Team</h2>
+                <form action="/user/register" method="POST" id="reg-form" class="input-team-form">
+                    <input class="fill--input" type="text" placeholder="Team Name" name="team" id="team-name" required>
+                    <input class="fill--input" class="fill--input" type="text" placeholder="Project Name" name="project"
+                        id="team-name" required>
+                </form>
+
+            </div>
+        </main>
+
+        <div class="section-team bg-color">
+            <h2 class="heading-secondary">Team Leader</h2>
+
+            <input class="fill--input" type="text" placeholder="Name" name="leadName" id="lead-name" required>
+            <input class="fill--input" type="text" placeholder="Branch" name="leadBranch" id="lead-branch" required>
+            <input class="fill--input" type="number" placeholder="Section" name="leadSection" id="lead-section"
+                required>
+            <input class="fill--input" type="number" placeholder="Student Number" name="leadStdno" id="lead-stdno"
+                required>
+            <input class="fill--input" type="text" placeholder="Domain" name="leadDomain" id="lead-domain" required>
+            <input class="fill--input" type="email" placeholder="Email" name="leadEmail" id="lead-email" required>
+            <input class="fill--input" type="text" placeholder="Contact" name="leadContact" id="lead-contact" required>
+        </div>
+
+
+
+        <div class="section-member bg-color">
+            <div class="member-form-btn">
+                <a href="#" class="btn btn--mem1" id="mem-1">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Member 1
+                </a>
+                <a href="#" class="btn btn--mem2" id="mem-2">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Member 2
+                </a>
+            </div>
+            <div class="filling-section">
+                <div class="wrap hide" id="mem1-div">
+                    <input class="fill--input" type="text" placeholder="Name" name="mem1Name" id="lead-name" required>
+                    <input class="fill--input" type="text" placeholder="Branch" name="mem1Branch" id="lead-branch"
+                        required>
+                    <input class="fill--input" type="number" placeholder="Section" name="mem1Section" id="lead-section"
+                        required>
+                    <input class="fill--input" type="number" placeholder="Student Number" name="mem1Stdno"
+                        id="mem1-stdno" required>
+                    <input class="fill--input" type="text" placeholder="Domain" name="mem1Domain" id="lead-domain"
+                        required>
+                    <input class="fill--input" type="email" placeholder="Email" name="mem1Email" id="lead-email"
+                        required>
+                    <input class="fill--input" type="text" placeholder="Contact" name="mem1Contact" id="lead-contact"
+                        required>
+                </div>
+                <div class="wrap hide" id="mem2-div">
+                    <input class="fill--input" type="text" placeholder="Name" name="mem2Name" id="lead-name" required>
+                    <input class="fill--input" type="text" placeholder="Branch" name="mem2Branch" id="lead-branch"
+                        required>
+                    <input class="fill--input" type="number" placeholder="Section" name="mem2Section" id="lead-section"
+                        required>
+                    <input class="fill--input" type="number" placeholder="Student Number" name="mem2Stdno"
+                        id="mem2-stdno" required>
+                    <input class="fill--input" type="text" placeholder="Domain" name="mem2Domain" id="lead-domain"
+                        required>
+                    <input class="fill--input" type="email" placeholder="Email" name="mem2Email" id="lead-email"
+                        required>
+                    <input class="fill--input" type="text" placeholder="Contact" name="mem2Contact" id="lead-contact"
+                        required>
+                </div>
+            </div>
+        </div>
+        <div class="submit--button row-flex-center bg-color">
+            <a href="#" class="btn btn--submit">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                SUBMIT
+            </a>
+
+        </div>
+    </div>
+
+
+
+
+
+    <script src="script/particles.js"></script>
+    <script src="script/app.js"></script>
+
+    <script>
+        var count_particles, stats, update;
+        stats = new Stats;
+        stats.setMode(0);
+        stats.domElement.style.position = 'absolute';
+        stats.domElement.style.left = '0px';
+        stats.domElement.style.top = '0px';
+        document.body.appendChild(stats.domElement);
+        count_particles = document.querySelector('.js-count-particles');
+        update = function () {
+            stats.begin();
+            stats.end();
+            if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+                count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+            }
+            requestAnimationFrame(update);
+        };
+        requestAnimationFrame(update);
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js">
+    </script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+.btn {
+  position: relative;
+  display: inline-block;
+  margin-right: 1.2rem;
+  /* margin-bottom: 1.2rem; */
+  padding: 1.2rem 2.4rem;
+  color: #fff;
+  background-color: #0d1236;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-decoration: none;
+  font-size: 2rem;
+  overflow: hidden;
+  transition: 0.1s;
+  font-weight: 300;
+  border-radius: 9px;
+}
+
+.btn:hover {
+  color: #255784;
+  background: #2196f3;
+  box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+}
+
+.btn:hover span:nth-child(1) {
+  left: 100%;
+}
+
+.btn:hover span:nth-child(3) {
+  right: 100%;
+}
+
+.btn:hover span:nth-child(2) {
+  top: 100%;
+}
+
+.btn:hover span:nth-child(4) {
+  bottom: 100%;
+}
+
+.btn--submit{
+  font-size: 2.4rem;
+  padding: 1.6rem 3.2rem;
+}
