@@ -47,7 +47,7 @@ body {
 }
 
 .bg-color {
-  padding-bottom:  1.6rem;
+  padding-bottom: 1.6rem;
   z-index: 0;
   border-radius: 1.1rem;
   background: transparent;
@@ -89,8 +89,11 @@ body {
   display: block;
   font-size: 1.6rem;
   padding: 1.2rem 2.4rem;
+  font-weight: 300;
   /* background-color: rgba(33, 37, 41, 0); */
   background-color: transparent;
+  color: #fff;
+  letter-spacing: 1.2px;
   border: none;
   border-bottom: 1.5px solid #2196f3;
   border-top-left-radius: 9px;
