@@ -8,6 +8,15 @@ html {
   font-size: 62.5% !important;
 }
 
+html::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
 body {
   background: transparent;
   font-family: "Rubik", sans-serif;
@@ -26,7 +35,7 @@ body {
   background: transparent;
 }
 .main-heading {
-  margin-top: 2.4rem;
+  margin-top: 3rem;
   text-align: center;
   font-size: 4.4rem;
   font-weight: 500;
@@ -38,6 +47,7 @@ body {
 .sub-heading {
   margin: 0 auto;
   text-align: center;
+ 
   font-size: 1.4rem;
   font-weight: 500;
   /* letter-spacing: -0.5px; */
@@ -51,6 +61,7 @@ body {
   padding: 0 3.2rem;
   margin: 0 auto;
   z-index: 10;
+  gap: 2rem;
 }
 
 .bg-color {
@@ -66,6 +77,14 @@ body {
 .heading-secondary {
   font-size: 2.8rem;
   font-weight: 400;
+  text-align: center;
+  background-color: rgb(27, 27, 27);
+  /* margin: ; */
+  padding: 0.8rem;
+  width: 100%;
+  border-radius: 9px;
+  /* margin: 0 1.2rem 0 1.2rem; */
+
   /* margin-bottom: 0.4rem; */
 }
 
@@ -91,19 +110,30 @@ body {
   gap: 1.2rem;
 }
 
+.logo-image {
+  background-color: transparent;
+  width: 90vw;
+  margin-bottom: 1.4rem;
+}
+
 .fill--input {
   display: block;
   font-size: 1.6rem;
   padding: 1.2rem 2.4rem;
   font-weight: 300;
-  /* background-color: rgba(33, 37, 41, 0); */
   background-color: transparent;
   color: #fff;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.3px;
   border: none;
   border-bottom: 1.5px solid #2196f3;
-  border-top-left-radius: 9px;
-  border-top-right-radius: 9px;
+  border-radius: 9px;
+}
+
+.fill--input:hover,
+.fill--input:focus,
+.select-where:hover,
+.select-where:focus {
+  outline: none;
 }
 
 input[type="email"]::placeholder,
@@ -118,6 +148,31 @@ input[type="number"]::placeholder {
   border: none;
 }
 
-.hide {
-  display: none;
+.wrap {
+  margin: 2.4rem 0;
+}
+
+/* .dropdown--menu {
+  width: max-content;
+  height: 1.2rem;
+} */
+
+.select-where {
+  display: block;
+  margin: 0.8rem;
+  padding: 1.2rem auto;
+  font-size: 1.6rem;
+  font-weight: 300;
+  background-color: transparent;
+  color: #fff;
+  letter-spacing: 0.3px;
+  border: none;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  border-bottom: 1.5px solid #2196f3;
+}
+
+.select-where-option {
+  background: transparent;
+  color: #000;
 }

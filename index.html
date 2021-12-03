@@ -8,8 +8,8 @@
     <title>Big Data</title>
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/button.css">
-    <link rel="stylesheet" href="./css/input.css">
     <link rel="stylesheet" href="./css/background-animation.css">
+    <!-- <link rel="stylesheet" href="./css/dropdown.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -23,9 +23,9 @@
 
 
     <div class="container column-flex">
-        <!-- <header class="heading"><img src="./img/abhiyaantriki.svg" alt="abhiyaantriki" id="logo"></header> -->
         <h1 class="main-heading">BIG DATA</h1>
-        <h2 class="sub-heading">centre of excellene</h2>
+        <h2 class="sub-heading">CENTRE OF EXCELLENCE</h2>
+        <!-- <header class="logo-image"><img src="./img/IMG-20211203-WA0008-removebg-preview (1).png" alt="abhiyaantriki" id="logo"></header> -->
         <main class="section-form bg-color">
             <div class="section-team-form ">
                 <h2 class="heading-secondary">Team</h2>
@@ -33,84 +33,83 @@
                     <input class="fill--input" type="text" placeholder="Team Name" name="team" id="team-name" required>
                     <input class="fill--input" class="fill--input" type="text" placeholder="Project Name" name="project"
                         id="team-name" required>
+                    <input class="fill--input" type="text" placeholder="Domain" name="leadDomain" id="lead-domain"
+                        required>
                 </form>
 
             </div>
         </main>
 
         <div class="section-team bg-color">
-            <h2 class="heading-secondary">Team Leader</h2>
-
+            <h2 class="heading-secondary">Member 1</h2>
             <input class="fill--input" type="text" placeholder="Name" name="leadName" id="lead-name" required>
-            <input class="fill--input" type="text" placeholder="Branch" name="leadBranch" id="lead-branch" required>
-            <input class="fill--input" type="number" placeholder="Section" name="leadSection" id="lead-section"
-                required>
+
+
+            <select class="select-where" required>
+                <option class="select-where-option" value="">Select</option>
+                <option class="select-where-option" value="friends">CSIT</option>
+                <option class="select-where-option" value="youtube">IT</option>
+                <option class="select-where-option" value="podcast">CS</option>
+                <option class="select-where-option" value="ad">CSE</option>
+                <option class="select-where-option" value="others">EN</option>
+            </select>
+
+
             <input class="fill--input" type="number" placeholder="Student Number" name="leadStdno" id="lead-stdno"
                 required>
-            <input class="fill--input" type="text" placeholder="Domain" name="leadDomain" id="lead-domain" required>
             <input class="fill--input" type="email" placeholder="Email" name="leadEmail" id="lead-email" required>
             <input class="fill--input" type="text" placeholder="Contact" name="leadContact" id="lead-contact" required>
         </div>
+        <div class="wrap" id="mem1-div">
+            <h2 class="heading-secondary">Member 2</h2>
+            <input class="fill--input" type="text" placeholder="Name" name="mem1Name" id="lead-name" required>
 
 
+            <select class="select-where" required>
+                <option class="select-where-option" value="">Select</option>
+                <option class="select-where-option" value="friends">CSIT</option>
+                <option class="select-where-option" value="youtube">IT</option>
+                <option class="select-where-option" value="podcast">CS</option>
+                <option class="select-where-option" value="ad">CSE</option>
+                <option class="select-where-option" value="others">EN</option>
+            </select>
 
-        <div class="section-member bg-color">
-            <div class="member-form-btn">
-                <a href="#" class="btn btn--mem1" id="mem-1">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    Member 1
-                </a>
-                <a href="#" class="btn btn--mem2" id="mem-2">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    Member 2
-                </a>
-            </div>
-            <div class="filling-section">
-                <div class="wrap hide" id="mem1-div">
-                    <input class="fill--input" type="text" placeholder="Name" name="mem1Name" id="lead-name" required>
-                    <input class="fill--input" type="text" placeholder="Branch" name="mem1Branch" id="lead-branch"
-                        required>
-                    <input class="fill--input" type="number" placeholder="Section" name="mem1Section" id="lead-section"
-                        required>
-                    <input class="fill--input" type="number" placeholder="Student Number" name="mem1Stdno"
-                        id="mem1-stdno" required>
-                    <input class="fill--input" type="text" placeholder="Domain" name="mem1Domain" id="lead-domain"
-                        required>
-                    <input class="fill--input" type="email" placeholder="Email" name="mem1Email" id="lead-email"
-                        required>
-                    <input class="fill--input" type="text" placeholder="Contact" name="mem1Contact" id="lead-contact"
-                        required>
-                </div>
-                <div class="wrap hide" id="mem2-div">
-                    <input class="fill--input" type="text" placeholder="Name" name="mem2Name" id="lead-name" required>
-                    <input class="fill--input" type="text" placeholder="Branch" name="mem2Branch" id="lead-branch"
-                        required>
-                    <input class="fill--input" type="number" placeholder="Section" name="mem2Section" id="lead-section"
-                        required>
-                    <input class="fill--input" type="number" placeholder="Student Number" name="mem2Stdno"
-                        id="mem2-stdno" required>
-                    <input class="fill--input" type="text" placeholder="Domain" name="mem2Domain" id="lead-domain"
-                        required>
-                    <input class="fill--input" type="email" placeholder="Email" name="mem2Email" id="lead-email"
-                        required>
-                    <input class="fill--input" type="text" placeholder="Contact" name="mem2Contact" id="lead-contact"
-                        required>
-                </div>
-            </div>
+
+            <input class="fill--input" type="number" placeholder="Student Number" name="mem1Stdno" id="mem1-stdno"
+                required>
+            <input class="fill--input" type="email" placeholder="Email" name="mem1Email" id="lead-email" required>
+            <input class="fill--input" type="text" placeholder="Contact" name="mem1Contact" id="lead-contact" required>
         </div>
+        <div class="wrap " id="mem2-div">
+            <h2 class="heading-secondary">Member 3</h2>
+            <input class="fill--input" type="text" placeholder="Name" name="mem2Name" id="lead-name" required>
+
+            <select class="select-where" required>
+                <option class="select-where-option" value="">Select</option>
+                <option class="select-where-option" value="friends">CSIT</option>
+                <option class="select-where-option" value="youtube">IT</option>
+                <option class="select-where-option" value="podcast">CS</option>
+                <option class="select-where-option" value="ad">CSE</option>
+                <option class="select-where-option" value="others">EN</option>
+            </select>
+
+
+            <input class="fill--input" type="number" placeholder="Student Number" name="mem2Stdno" id="mem2-stdno"
+                required>
+            <input class="fill--input" type="email" placeholder="Email" name="mem2Email" id="lead-email" required>
+            <input class="fill--input" type="text" placeholder="Contact" name="mem2Contact" id="lead-contact" required>
+        </div>
+
+
+
+
         <div class="submit--button row-flex-center bg-color">
             <a href="#" class="btn btn--submit">
                 <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
-                SUBMIT
+                REGISTER NOW
             </a>
 
         </div>
@@ -149,3 +148,40 @@
 </body>
 
 </html>
+
+
+
+
+
+
+
+<!-- 
+
+    garbage
+
+    
+           <input class="fill--input" type="text" placeholder="Branch" name="mem1Branch" id="lead-branch" required> 
+ <input class="fill--input" type="number" placeholder="Section" name="mem1Section" id="lead-section" required> 
+
+<div class="section-member bg-color">
+
+    <div class="filling-section"></div>
+</div>
+
+<div class="member-form-btn">
+    <a href="#" class="btn btn--mem1" id="mem-1">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Member 1
+    </a>
+    <a href="#" class="btn btn--mem2" id="mem-2">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Member 2
+    </a>
+</div>
+-->
